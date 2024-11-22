@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/mystyles.css">
+    <title>home</title>
+</head>
+
+<body>
+    <div class="top-bar primary">
+        <div class="top-bar-left ">
+            <ul class="menu align-middle simple">
+                <li class="menu-text"><img src="vrchat-logo.png" alt="vrchat logo"></li>
+                <li><a href="index.html">home</a></li>
+                <li><a href="avatars.html">avatars</a></li>
+                <li><a href="community.html">the community</a></li>
+                <li><a href="worlds.html">worlds</a></li>
+            </ul>
+        </div>
+        <div class="top-bar-right">
+            <ul class="menu">
+                <li><input type="search" placeholder="Search"></li>
+                <li><button type="button" class="button">Search</button></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- we can use the foundation grid system to create a responsive layout -->
+    
+    <h1 class="center-text"><b>vrchat stats</b></h1>
+    
+    <div class="margin-top-2 margin-left-5">
+        <img src="vrchat-growth-chart.png">
+    </div>
+
+    <div class="margin-top-1 right-img">
+        <img src="images.png">
+    </div>
+      
+
+    <script src="node_modules/jquery/dist/jquery.js"></script>
+    <script src="node_modules/foundation-sites/dist/js/foundation.min.js"></script>
+    <script src="js/main.js"></script>
+
+    
+    
+    <table class="center">
+        <tr>
+          <th>avatars</th>
+          <th>community</th>
+          <th>worlds</th>
+        </tr>
+        <tr>
+          <td>1</td>
+          <td>2</td>
+          <td>3</td>
+        </tr>
+      </table>
+      
+    
+    
+    
+    <form>
+        <label for="datapointTitle">waar gaat het over</label>
+        <input type="text" id="datapointTitle" name="datapointTitle" placeholder="Voer de titel in" required>
+        
+        <label for="datapointValue">hoeveel</label>
+        <input type="number" id="datapointValue" name="datapointValue" placeholder="Voer de waarde in" required>
+        
+        <button class="button" type="submit">Voeg Datapunt Toe</button>
+    </form>
+</body>
+
+</html>
